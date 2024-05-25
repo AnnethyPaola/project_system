@@ -1,27 +1,55 @@
-# ProjectSystem
+¡Hola! Adjunto la entrega de mi prueba técnica, un sistema de gestión de tareas que emplea servicios y JWT para la autenticación.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+# Pasos Iniciales:
 
-## Development server
+Asegúrate de clonar el repositorio desde la rama principal y, luego, ejecuta npm i para instalar todas las dependencias necesarias.
+Procedimiento para Compilar el Proyecto:
+Como usuario de Mac o Windows, estos son los comandos que uso para ejecutar el proyecto:
+* Desarrollo (Dev): Utilizo ng s (o sudo ng s en Mac) para lanzar el proyecto en el entorno de desarrollo.
+* Entorno QA: Para ejecutar el proyecto en el entorno de QA, empleo npm run start:qa.
+* Producción: Para compilar el proyecto en una versión lista para producción, utilizo ng build --configuration=production.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Organización de la aplicación:
 
+En cuanto a la estructura del proyecto, lo organicé en tres módulos principales: core, features y shared.
+El módulo core es como el corazón de la aplicación. Ahí es donde coloqué los componentes que se usan en varios lugares de la app. Por ejemplo, el navbar (la barra de navegación) y la página de excepciones (que muestra errores) están aquí.
+En la carpeta shared, es donde guardé todo lo que necesitamos para hacer funcionar la lógica de la aplicación. Es decir, los pipes (filtros), los enums (enumeraciones), los servicios, las interfaces, guards y otros elementos que se usan en toda la app.
+Por último, en el módulo features, es donde se encuentran las vistas específicas de la aplicación. Aquí es donde manejamos la autenticación del sistema, la gestión de usuarios y la gestión de tareas. Cada una de estas secciones tiene su propio módulo y su propio sistema de navegación para que los usuarios puedan moverse fácilmente entre ellas.
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usuarios para iniciar sesión en la aplicación:
 
-## Build
+* Usuario 1:
+    * Correo electrónico: juan.perez@gmail.com
+    * Contraseña: Juan2024!
+* Usuario 2:
+    * Correo electrónico: maria.gomez@gmail.com
+    * Contraseña: Maria@123
+      
+Si necesitas probar con más usuarios, puedes encontrar una lista adicional en la carpeta assets/data dentro del proyecto. Con estos usuarios, podrás ingresar al sistema y explorar todas las funcionalidades de la aplicación.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Test: 
 
-## Running unit tests
+Para asegurarnos de que nuestra aplicación funcione correctamente, hemos implementado una sólida estructura de pruebas. Vamos a echar un vistazo a cómo están organizadas estas pruebas:
+Core:
+* exception.component.spec.ts
+* navbar.component.spec.ts
+Features:
+* Pages:
+    * users-list.component.spec.ts
+    * tasks-list.component.spec.ts
+    * home.component.spec.ts
+    * pages.component.spec.ts
+    * login.component.spec.ts
+Shared:
+* Pipes:
+    * tasks-level.pipe.spec.ts
+    * tasks-status.pipe.spec.ts
+    * users-status.pipe.spec.ts
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Services:
+    * users.service.spec.ts
+    * tasks.service.spec.ts
+    * auth.service.spec.ts
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para ejecutar todas las pruebas a la vez, simplemente usamos el comando npm run test. Si necesitas ejecutar una prueba específica, solo agrega el nombre del archivo después del comando. Con esta estructura organizada y pruebas detalladas, estamos seguros de la calidad de nuestro código y la funcionalidad de nuestra aplicación. (En total son 14 archivos de pruebas y 33 pruebas unitarias).
