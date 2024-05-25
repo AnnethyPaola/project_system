@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="wrapper">
+    <div class="title"><span>Iniciar sesion</span></div>
+    <form  [formGroup]="loginForm">
+      <div class="row">
+        <mat-icon class="icon">person</mat-icon>
+        <input type="text" placeholder="Email" required formControlName="email"> 
+      </div>
+      <div class="row">
+        <mat-icon class="icon">password</mat-icon>
+        <input type="password" placeholder="Password" required formControlName="password">
+      </div>
+      <div class="row button">
+        <input type="submit" value="Ingresar" (click)="login()">
+      </div>
+    </form>
+  </div>
+</div>

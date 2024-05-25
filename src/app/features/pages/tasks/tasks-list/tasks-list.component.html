@@ -1,0 +1,50 @@
+<!-- <app-navbar></app-navbar> -->
+
+<br>
+
+<div class="wrapper">
+  <div class="table">
+    <div class="row header blue">
+      <div class="cell"> Codigo </div>
+      <div class="cell"> Titulo </div>
+      <div class="cell"> Descripcion </div>
+      <div class="cell"> Puntuacion </div>
+      <div class="cell"> Estado </div>
+      <div class="cell"> Nivel </div>
+    </div>
+
+    <div *ngFor="let task of tasks" class="row">
+      <div class="cell" data-title="Code">
+        {{task.code}}
+      </div>
+      <div class="cell" data-title="Title">
+        {{task.title}}
+      </div>
+      <div class="cell" data-title="Description">
+        {{task.description}}
+      </div>
+      <div class="cell" data-title="puntuation">
+        {{task.score}} / 5
+      </div>
+      <div class="cell" data-title="Status" [ngClass]="{
+             'status-pending': task.status === 0,
+             'status-in-progress': task.status === 1,
+             'status-completed': task.status === 2,
+             'status-canceled': task.status ===3
+           }">
+        {{task.status | TasksStatusPipe}}
+      </div>
+      <div class="cell" data-title="Level" [ngClass]="{
+        'level-low': task.level === 0,
+        'level-medium': task.level === 1,
+        'level-hard': task.level === 2,
+      }">
+        {{task.level | TasksLevelPipe}}
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

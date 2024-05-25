@@ -1,0 +1,83 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "email": "juan.perez@gmail.com",
+            "userName": "juan.perez",
+            "password": "Juan2024!",
+            "status": 0,
+            "deleted": false
+        },
+        {
+            "id": 2,
+            "email": "maria.gomez@gmail.com",
+            "userName": "maria.gomez",
+            "password": "Maria@123",
+            "status": 0,
+            "deleted": false
+        },
+        {
+            "id": 3,
+            "email": "carlos.fernandez@gmail.com",
+            "userName": "carlos.fernandez",
+            "password": "Carlos$456",
+            "status": 0,
+            "deleted": false
+        },
+        {
+            "id": 4,
+            "email": "laura.rodriguez@gmail.com",
+            "userName": "laura.rodriguez",
+            "password": "Laura567",
+            "status": 0,
+            "deleted": false
+        }
+    ]
+    
+    ,
+    "tasks": [
+        {
+            "id": "a7b8c9d0-e1f2-4g3h-5i6j-7k8l9m0n1o2p",
+            "title": "Configurar Entorno de Desarrollo",
+            "description": "Configurar el entorno de desarrollo con todas las herramientas y dependencias necesarias.",
+            "score": 0,
+            "status": 0,
+            "level": 0,
+            "deleted": false,
+            "code": "001"
+        },
+        {
+            "id": "b8c9d0e1-f2g3-4h5i-6j7k-8l9m0n1o2p3q",
+            "title": "Implementar Autenticación",
+            "description": "Implementar la autenticación de usuarios usando JWT.",
+            "score": 1,
+            "status": 1,
+            "level": 1,
+            "deleted": false,
+            "code": "002"
+        },
+        {
+            "id": "c9d0e1f2-g3h4-5i6j-7k8l-9m0n1o2p3q4r",
+            "title": "Crear Página de Inicio",
+            "description": "Diseñar e implementar la página de inicio de la aplicación.",
+            "score": 2,
+            "status": 2,
+            "level": 2,
+            "deleted": false,
+            "code": "003"
+        },
+        {
+            "id": "d0e1f2g3-h4i5-6j7k-8l9m-0n1o2p3q4r5s",
+            "title": "Desarrollar API",
+            "description": "Desarrollar la API para la aplicación.",
+            "score": 3,
+            "status": 0,
+            "level": 2,
+            "deleted": false,
+            "code": "004"
+        }
+    ]
+    
+    
+  }
+  

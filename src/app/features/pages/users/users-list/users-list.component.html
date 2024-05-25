@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <div class="table">
+    <div class="row header blue">
+      <div class="cell"> </div>
+      <div class="cell"> Nombre de usuario </div>
+      <div class="cell"> Correo </div>
+      <div class="cell"> Estado </div>
+    </div>
+
+    <div *ngFor="let user of users; let i = index" class="row">
+      <div class="cell" data-title="Code">
+        <img src="./assets/img/avatars/user-{{ i + 1 }}.jpg" alt="User Avatar" class="user-avatar" />
+
+      </div>
+      <div class="cell" data-title="Title">
+        {{user.userName}}
+      </div>
+      <div class="cell" data-title="Description">
+        {{user.email}}
+      </div>
+      <div class="cell" data-title="puntuation" 
+      [ngClass]="{
+        'status-active': user.status === 0,
+        'status-bloqued': user.status === 1,
+        'status-inactive': user.status === 2,
+      }">
+        {{user.status |  UsersStatusPipe}}
+      </div>
+     
+    </div>
+
+
+  </div>
+
+
+</div>

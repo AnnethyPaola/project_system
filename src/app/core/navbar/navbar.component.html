@@ -1,0 +1,11 @@
+<!-- toolbar.component.html -->
+<mat-toolbar color="primary">
+  <span class="logo">{{title}}</span>
+  <span class="spacer"></span>
+  <button mat-button aria-label="Ir a la página de inicio" (click)="navigateHome()">Inicio |</button>
+  <button mat-button aria-label="Ver perfil de usuario"  (click)="navigateUserList()">Usuarios  |</button>
+  <button mat-button aria-label="Ir a configuraciones" (click)="navigateTaskList()">Tareas |</button>
+  <button mat-icon-button aria-label="Example icon-button with menu icon" (click)="logout()">
+    <mat-icon class="icon">logout</mat-icon>
+  </button>
+</mat-toolbar>

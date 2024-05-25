@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ecf0f1;
+    font-family: Arial, sans-serif;
+  }
+  
+  :host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .not-found-container {
+    text-align: center;
+    background: white;
+    padding: 3rem;
+    border-radius: 10px;
+    
+  }
+  
+  .not-found h1 {
+    font-size: 6rem;
+    color: #4050b4;
+    margin-bottom: 1rem;
+  }
+  
+  .not-found p {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+  }
+  
+  .not-found .back-home {
+    text-decoration: none;
+    background: #4050b4;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .not-found .back-home:hover {
+    background: #2980b9;
+  }
+  

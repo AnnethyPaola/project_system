@@ -1,0 +1,31 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.welcome-message {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #666666;
+}
